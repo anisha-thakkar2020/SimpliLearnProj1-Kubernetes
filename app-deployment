@@ -6,11 +6,11 @@ spec:
   replicas: 3
   selector:
     matchLabels:
-      app: skK8s
+      app: slK8s
   template:
     metadata:
       labels:
-        app: skK8s
+        app: slK8s
     spec:
       containers:
         - name: cont1
