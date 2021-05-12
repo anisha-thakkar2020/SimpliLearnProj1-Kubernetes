@@ -32,11 +32,3 @@ spec:
   ports:
   - port: 80
     targetPort: 80
----
-kind: HorizontalPodAutoscaler
-apiVersion: autoscaling/v1
-metadata:
-  name: slearn-proj-hpa
-spec:
-  targetCPUUtilizationPercentage: 60
-
