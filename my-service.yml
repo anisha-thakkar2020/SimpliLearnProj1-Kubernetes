@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: slProj1K8s-svc
+spec:
+  type: ClusterIP
+  selector:
+    app: slK8s
+  Ports:
+  - port: 80
+    targetPort: 80
