@@ -1,6 +1,0 @@
-kind: HorizontalPodAutoscaler
-apiVersion: autoscaling/v1
-metadata:
-  name: slProj1K8s-hpa
-spec:
-  targetCPUUtilizationPercentage: 60
