@@ -1,0 +1,22 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: slProj1K8s
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: skK8s
+  template:
+    metadata:
+      labels:
+        app: skK8s
+    spec:
+      containers:
+        - name: cont1
+          image: nginx
+          ports:
+            - containerPort: 80
+          resources:
+            limits:
+              cpu: 10m
